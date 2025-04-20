@@ -6,7 +6,7 @@ const messageRoute=express.Router();
 
 
 messageRoute.get('/users', verifiedToken, getUserForSlideBar)
-messageRoute.get('/:id', verifiedToken, getMessages)
-messageRoute.post('/send/:id', verifiedToken, sendMessages)
+messageRoute.get("/:id", verifiedToken, getMessages)
+messageRoute.post("/send/:id", verifiedToken, sendMessages)
 
 export default messageRoute;
