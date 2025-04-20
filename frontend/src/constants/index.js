@@ -29,6 +29,4 @@ export const THEMES = [
   "coffee",
   "winter",
   "dim",
-  "nord",
-  "sunset",
 ];

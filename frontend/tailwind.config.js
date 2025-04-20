@@ -43,8 +43,6 @@ module.exports = {
       "coffee",
       "winter",
       "dim",
-      "nord",
-      "sunset",
     ],
   },
 }
