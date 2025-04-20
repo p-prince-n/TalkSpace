@@ -40,16 +40,3 @@ server.listen(PORT, ()=>{
     console.log(`server started at http://localhost:${PORT}`);
     connectDB();
 })
-console.dir(app._router, { depth: 5 });
-app._router.stack.forEach((middleware) => {
-    if (middleware.route) {
-      console.log("Route:", middleware.route.path);
-    } else if (middleware.name === 'router') {
-      middleware.handle.stack.forEach((handler) => {
-        if (handler.route) {
-          console.log("Nested route:", handler.route.path);
-        }
-      });
-    }
-  });
-  
