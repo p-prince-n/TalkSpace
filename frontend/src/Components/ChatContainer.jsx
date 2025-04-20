@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../css/hideScrollBar.css"
 import { useChatStore } from "../store/useChatStore";
 import ChatHeader from "./ChatHeader";
 import MessageInput from "./MessageInput";
